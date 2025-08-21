@@ -1,56 +1,40 @@
-📘 Student Management & Placement System (SQL Project)
-📌 Project Overview
+ 🎓 Student Management & Placement System (SQL Project)
 
-This project is a Student Management & Placement Database built using SQL.
-It covers academic and placement modules of an institute, designed with proper Primary Keys, Foreign Keys, Constraints, and Relationships.
+This project is a **SQL-based relational database design** that manages student academics and placements efficiently.  
+It covers students, courses, trainers, batches, enrollments, payments, attendance, scores, and placement modules like companies, jobs, applications, interviews, and offers.
 
-The database allows management of:
+---
 
-🎓 Students, Courses, Trainers, and Batches
+📂 Project Files
+Create_Tables_and_Data.sql` → Contains table creation scripts with constraints and sample data inserts  
+ `Queries.sql` → Contains test queries for fetching data  
+ `ER_Diagram.png` → Entity Relationship Diagram for better understanding of the schema  
 
-📝 Enrollments, Attendance, Scores, and Payments
 
-🏢 Companies, Jobs, Applications, Interviews, and Offers
 
-🗂️ Database Schema
-1️⃣ Core Module
+ 📊 ER Diagram
+[ER Diagram](./ER_Diagram.png)
 
-Students (StudentID, Name, Email, Phone, Address, DOJ, CourseID, BatchID)
 
-Courses (CourseID, CourseName, DurationMonths, FeeAmount)
 
-Trainers (TrainerID, Name, Expertise, Phone, Email)
+ 🚀 Features
+✅ Student Registration & Course Management  
+✅ Batch Scheduling with Trainers  
+✅ Enrollments & Fee Payments  
+✅ Attendance Tracking  
+✅ Exam Scores Recording  
+✅ Placement Module (Companies, Jobs, Applications, Interviews, Offers)  
 
-Batches (BatchID, CourseID, TrainerID, StartDate, EndDate, TimeSlot)
 
-Enrollments (EnrollID, StudentID, BatchID, EnrollDate, Status)
 
-2️⃣ Finance Module
+ 🛠️ Tech Stack
+ Database: MySQL / SQL Server  
+  Language: SQL (DDL, DML, Constraints, Joins, Aggregates)  
+Tools: Workbench / SSMS  
 
-Payments (PaymentID, StudentID, AmountPaid, PaymentDate, Mode, Remark)
 
-3️⃣ Academics Module
 
-Attendance (AttendID, StudentID, Date, Status)
-
-Scores (ScoreID, StudentID, ExamName, MarksObtained, MaxMarks, ExamDate)
-
-4️⃣ Placement Module
-
-Companies (CompanyID, Name, Industry, Location, Contact)
-
-Jobs (JobID, CompanyID, Role, SalaryPackage, Location, Openings)
-
-Applications (AppID, StudentID, JobID, ApplyDate, Status)
-
-Interviews (InterviewID, AppID, RoundNo, Result, InterviewDate)
-
-Offers (OfferID, AppID, Salary, JoiningDate, Status)
-
-🔑 Features
-
-✔️ Normalized relational schema with PK–FK mapping
-✔️ CHECK, NOT NULL, UNIQUE constraints implemented
-✔️ Sample INSERT statements with 50 students, courses, trainers, etc.
-✔️ Complete Placement Module integration
-✔️ ER Diagram for better visualization
+ 📌 How to Run
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/your-username/Student-Management-SQL-Project.git
